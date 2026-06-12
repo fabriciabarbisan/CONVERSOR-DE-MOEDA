@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <header>
+        <img class="moeda" src="./img/Coin.gif" alt="Gif de moedas girando">
+    </header>
+
+    <main>
+        <label class="texto-origem">
+            Converter <b>de</b>
+            <br>
+            <select class="origem">
+                <option value="real">R$ Real Brasileiro</option>
+            </select>
+        </label>
+
+        <label class="texto-destino">
+            Converter <b>para</b>
+            <br>
+            <select class="destino">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra Esterlina</option>
+                <option value="bitcoin">₿ Bitcoin</option>
+            </select>
+        </label>
+
+        <label class="texto-valor">
+            Valor
+            <br>
+            <input class="input-valor" type="text" placeholder="R$ 100,00">
+        </label>
+
+        <button class="convert-button">Converter</button>
+
+        <section class="resultado">
+            <div class="valor-conversao">
+                <img class="brasil" src="img/brasil 2.png" alt="Bandeira do Brasil">
+                <p class="texto-moeda">Real</p>
+                <p class="valor-origem">R$ 0,00</p>
+            </div>
+
+            <img class="seta" src="img/seta.png" alt="Seta indicando a conversão">
+
+            <div class="resultado-conversao">
+                <img class="currency-img" src="img/estados-unidos 1.png" alt="Bandeira dos Estados Unidos">
+                <p class="texto-moeda" id="nome-moeda">Dólar Americano</p>
+                <p class="valor-destino">US$ 0.00</p>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./scripts.js"></script>
+</html>

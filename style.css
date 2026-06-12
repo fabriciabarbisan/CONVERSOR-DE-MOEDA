@@ -1,0 +1,155 @@
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(to bottom, #01201a, #31d4b1);
+    background-attachment: fixed;
+}
+
+.moeda {
+    width: 300px;
+    margin: 50px auto 15px;
+    display: block;
+}
+
+main {
+    width: 375px;
+    background: #F4F4F4;
+    border-radius: 20px;
+    margin: 0 auto 40px;
+    padding: 44px 24px 23px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777777;
+    line-height: 18px;
+    display: block;
+    width: 327px;
+    height: 72px;
+    margin: 0 auto 24px;
+}
+
+select,
+input {
+    width: 327px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    margin: 6px auto 0px;
+    display: block;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555555;
+    line-height: 18px;
+    appearance: none;
+    cursor: pointer;
+}
+
+input{
+    cursor: text;
+}
+
+::placeholder {
+    font-size: 16px;
+    font-weight: 700;
+    color: #555555;
+    line-height: 18px;
+    text-align: left;
+}
+
+input:focus {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555555;
+    line-height: 18px;
+    padding-left: 15px;
+    border: 1px solid #1da88a;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+button {
+    width: 327px;
+    height: 48px;
+    background: #1da88a;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 0px auto;
+    display: block;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid #1da88a;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valor-conversao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.resultado-conversao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.brasil {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.texto-moeda {
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+    line-height: 18px;
+}
+
+.valor-origem, .valor-destino {
+    font-weight: 700;
+    font-size: 20px;
+    color: #555555;
+    line-height: 18px;
+}
+
+.seta {
+    margin: 15px 0;
+    }
+
+.usa {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
